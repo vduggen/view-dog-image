@@ -1,0 +1,44 @@
+#wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#wrapper div {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    box-shadow: 0 0 14px #000000AA;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    transition: ease-in-out .3s;
+}
+
+#wrapper div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 14px #000000FF;
+}
+
+#wrapper button {
+    margin-top: 1.5rem;
+    width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    border:none;
+    background: #00AA00;
+    color: #fff;
+    font: 400 1rem Arial;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    box-shadow: 0 0 14px #000000AA;
+}
+
+#wrapper button:hover {
+    opacity: .8;
+    box-shadow: 0 0 14px #000000FF;
+}
