@@ -1,0 +1,73 @@
+#container-list-races {
+    width: 1140px;
+    margin:0 auto;
+}
+
+#container-list-races ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container-list-races ul li.boxRace {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: teal;
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    box-shadow: 0 0 14px #000000AA;
+    text-transform: capitalize;
+    transition: ease-in-out .3s;
+}
+
+#container-list-races ul li.boxRace a{
+    cursor: pointer;
+    transition: ease-in-out .1s;
+    text-decoration: none;
+    color: #fff;
+}
+
+#container-list-races ul li.boxRace a:hover{
+    opacity: .8;
+}
+
+#container-list-races ul li.boxRace span{
+    font-weight: 500;
+}
+
+#container-list-races ul li.boxRace ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container-list-races ul li.boxRace ul li{
+    margin: .5rem 0;
+}
+
+#container-list-races ul li.boxRace ul li a{
+    cursor: pointer;
+    transition: ease-in-out .1s;
+    text-decoration: none;
+    color: #fff;
+}
+
+#container-list-races ul li.boxRace ul li a:hover{
+    opacity: .8;
+}
+
+#container-list-races ul li.boxRace ul li span {
+    font-weight: 500;
+}
+
+#container-list-races ul li.boxRace:hover {
+    box-shadow: 0 0 14px #000000FF;
+    transform: translateY(-2px);
+}

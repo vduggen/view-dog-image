@@ -1,0 +1,13 @@
+<article id="container-list-races">
+    <ul>
+        <li class="boxRace" *ngFor="let race of races">
+            <a routerLink="/race/{{race.name}}"><span>Raça:</span> {{ race.name }}</a>
+    
+            <ul *ngIf="race">
+                <li *ngFor="let subrace of race.subraces">
+                    <a routerLink="/subrace/{{race.name}}/{{subrace}}"><span>Subraça:</span> {{ subrace }}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</article>
